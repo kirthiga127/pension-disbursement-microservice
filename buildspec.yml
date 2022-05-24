@@ -28,4 +28,4 @@ phases:
     - printf '[{"name":"auth-container","imageUri":"%s"}]' 156962844638.dkr.ecr.us-east-1.amazonaws.com/pms-disbursement-repository-890387:final > imagedefinitions.json
 artifacts:
   files:
-  - pensiondisbursement-microservice/imagedefinitions.json
+  - pension-disbursement-microservice/imagedefinitions.json
