@@ -14,8 +14,7 @@ phases:
     commands:
     - echo Build started on `date`
     - echo Building Java
-    - mvn compile
-    - mvn package -DskipTests
+    - mvn clean
     - echo Building the docker image..
     - docker build -t pms-disbursement-repository-890387 .
     - docker tag pms-disbursement-repository-890387:final 156962844638.dkr.ecr.us-east-1.amazonaws.com/pms-disbursement-repository-890387:final
