@@ -8,6 +8,7 @@ phases:
   commands:
   - echo Logging in to Amazon ECR...
   - aws --version
+  - systemctl start docker
   - echo Kirthi128 | docker login --username kirthiga --password-stdin
   - TAG="$(echo $CODEBUILD_RESOLVED_SOURCE_VERSION | head -c 8)"
   - IMAGE_URI=156962844638.dkr.ecr.us-east-1.amazonaws.com/890387-pension-disbursement-repository:${TAG}
