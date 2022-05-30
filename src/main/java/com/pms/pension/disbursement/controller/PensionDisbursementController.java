@@ -52,7 +52,7 @@ public class PensionDisbursementController {
 	
 	@GetMapping("/health-check")
 	public ResponseEntity<String> healthCheck() {
-		return new ResponseEntity<>("Ok", HttpStatus.OK);
+		return new ResponseEntity<>("disbursement-Ok", HttpStatus.OK);
 	}
 	
 	
