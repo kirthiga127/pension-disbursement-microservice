@@ -3,7 +3,7 @@ Resources:
 - TargetService:
 Type: AWS::ECS::Service
 Properties:
-TaskDefinition: "arn:aws:ecs:us-east-1:156962844638:task-definition/890387-pension-disbursement-task-definition:1"
+TaskDefinition: "arn:aws:ecs:us-east-1:156962844638:task-definition/890387-pension-disbursement-task-definition:3"
 LoadBalancerInfo:
 ContainerName: "890387-pension-disbursement-container"
 ContainerPort: 8300
